@@ -1,0 +1,28 @@
+.all{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: aqua;
+    width: 30vw;
+    height: 50vh;
+    margin-left: 100px;
+    box-shadow: red;
+    font-size: 20px;
+
+}
+.all.lib label{
+    margin-bottom: 10px;
+    border: 2px solid red;
+    /* bottom: 70px; */
+
+}
+.all .lib label input{
+    display: flex;
+    border: 2px solid red;
+}
+button{
+    margin-top: 20px;
+    margin-left: 20px;
+}
