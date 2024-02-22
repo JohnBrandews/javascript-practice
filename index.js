@@ -20,26 +20,43 @@
 
 //  }
 //  console.log(add(10, 78))
- let area
- let width
- let height
-   width = window.prompt("enter width")
-   height = window.prompt("enter height")
-   function getArea (width, height) {
-      let result = width*height
-      return result
-   }
-   console.log(getArea(width, height))
-    
-   let myNum = 123456.789
-   myNum = myNum.toLocaleString("hi-IN")//hindu
 
-   myNum = myNum.toLocaleString("en-US")//usa
-   myNum = myNum.toLocaleString("de-DE")//germany
-   myNum = myNum.toLocaleString("en-US",{style: "currency",currency: "USD"})//changes the currency to USD
-   myNum = myNum.toLocaleString(undefined, {style: "percent"}) //change to percent
-   myNum = myNum.toLocaleString(undefined, {style: "unit", unit: "celsius"}) //change to  unit you want
+//  let area
+//  let width
+//  let height
+//    width = window.prompt("enter width")
+//    height = window.prompt("enter height")
+//    function getArea (width, height) {
+//       let result = width*height
+//       return result
+//    }
+//    console.log(getArea(width, height))
+    
+//    let myNum = 123456.789
+//    myNum = myNum.toLocaleString("hi-IN")//hindu
+
+//    myNum = myNum.toLocaleString("en-US")//usa
+//    myNum = myNum.toLocaleString("de-DE")//germany
+//    myNum = myNum.toLocaleString("en-US",{style: "currency",currency: "USD"})//changes the currency to USD
+//    myNum = myNum.toLocaleString(undefined, {style: "percent"}) //change to percent
+//    myNum = myNum.toLocaleString(undefined, {style: "unit", unit: "celsius"}) //change to  unit you want
 
    
 
-   console.log(myNum)
+   // console.log(myNum)
+   //guessing game//
+   const answer = Math.floor(Math.random()*10 +1)
+   let guesses = 0
+   document.getElementById("submitButton").onclick = function () {
+      let guess= document.getElementById("guessfield").value
+      guesses +=1
+      if (guess == answer) {
+         alert("is the answer ")
+      }
+      else if(guess < answer) {
+         alert("too small")
+   }
+   else if(guess > answer) {
+      alert("too big")
+   }
+}
