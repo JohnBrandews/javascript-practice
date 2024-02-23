@@ -1,5 +1,5 @@
 document.getElementById("submitButton").onclick = function () {
-    let temp;
+    var temp;
     if(document.getElementById("cButton").checked){
         temp = document.getElementById("textBox").value;
         temp = Number(temp);
@@ -19,7 +19,21 @@ document.getElementById("submitButton").onclick = function () {
     else{
         document.getElementById("tempLabel").innerHTML = "select a unit"
     }
-    
+
+}
+document.getElementById("rButton").onclick = function () {
+    if(document.getElementById("cButton").checked){
+temp = document.getElementById("textBox").value;
+temp = 0
+document.getElementById("tempLabel").innerHTML =  temp +"C"
+
+}
+    else if(document.getElementById("fButton").checked){
+        temp = document.getElementById("textBox").value;
+ temp = 0
+ document.getElementById("tempLabel").innerHTML =  temp +"F"
+
+}
 }
 function toCelsius(temp){
     return (temp-32)*(5/9);
