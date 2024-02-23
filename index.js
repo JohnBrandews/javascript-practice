@@ -78,21 +78,31 @@
 //    console.log(price)
 
 //  }
-var marks = []; // Initialize an empty array to store marks
-var sum = 0;
+// var marks = []; // Initialize an empty array to store marks
+// var sum = 0;
 
 // Prompt the user to enter their marks
-var numberOfMarks = parseInt(window.prompt("How many marks do you want to enter?"));
+// var numberOfMarks =parseInt (window.prompt("How many marks do you want to enter?"));
 
 // Loop to input marks
-for (var i = 0; i < numberOfMarks; i++) {
-   var mark = parseInt(window.prompt("Enter mark " + (i + 1)));
-   marks.push(mark); // Add the entered mark to the marks array
-}
+// for (var i = 0; i < numberOfMarks; i++) {
+   // var mark = parseInt(window.prompt("Enter mark " + (i + 1)));
+   // marks.push(mark); // Add the entered mark to the marks array
+// }
 
 // Calculate the sum of marks
-for (var j = 0; j < marks.length; j++) {
-   sum += marks[j];
-}
+// for (var j = 0; j < marks.length; j++) {
+   // sum += marks[j];
+// }
 
-console.log("Sum of marks:", sum);
+// console.log("Sum of marks:", sum);
+let fruits = ["mangoes", "banana","apples"]; 
+let  vegetables = ["spinach", "carrots", "cabbage"]
+let meals = ["eggs", "meats", "fish"]
+let grocery = [fruits,vegetables,meals];
+grocery[1][2] = "hotdogs"
+for (let list of grocery) {
+   for (let food of list) {
+      console.log(food);
+   }
+}
