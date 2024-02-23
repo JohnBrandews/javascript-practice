@@ -96,13 +96,59 @@
 // }
 
 // console.log("Sum of marks:", sum);
-let fruits = ["mangoes", "banana","apples"]; 
-let  vegetables = ["spinach", "carrots", "cabbage"]
-let meals = ["eggs", "meats", "fish"]
-let grocery = [fruits,vegetables,meals];
-grocery[1][2] = "hotdogs"
-for (let list of grocery) {
-   for (let food of list) {
-      console.log(food);
-   }
+
+// let fruits = ["mangoes", "banana","apples"]; 
+// let  vegetables = ["spinach", "carrots", "cabbage"]
+// let meals = ["eggs", "meats", "fish"]
+// let grocery = [fruits,vegetables,meals];
+// grocery[1][2] = "hotdogs"
+// for (let list of grocery) {
+//    for (let food of list) {
+//       console.log(food);
+//    }
+// }
+//spread operator contains 3 dots
+
+// let numbers = [1,2,3,4,5,6,7]
+// let maximum = Math.max(...numbers)
+// console.log(maximum)
+//rest operator rep a function that accepts any number of arguments has 3 dots
+// a = 1
+// b = 2
+// c = 3
+// console.log(sum(a, b, c))
+// function sum(...numbers) {
+//    let total = 0
+//    for (let number of numbers) {
+//       total += number
+//    }
+//    return total
+// }
+//callback function
+// sum (2,3,displayDOM)
+// function sum(x,y,total)  {
+//    let results = x+y
+//    total(results)
+// }
+// function displayConsole(output) {
+//    console.log(output)
+// }
+// function displayDOM (output) {
+//    document.getElementById("myLabel").innerHTML = output
+// }
+let students = ["john", "james", "mary"];
+
+students.forEach(capitalize);
+students.forEach(print);
+
+function capitalize(element, index, array) {
+   array[index] = element[0].toUpperCase() + element.substring(1);
 }
+
+function print(x) {
+   console.log(x);
+}
+//substring function extracts the specified index of an element and prints it
+let lil = "john Brandews"
+let sub = lil.substring(2,7)
+console.log(sub)
