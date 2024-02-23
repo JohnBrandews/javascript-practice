@@ -45,18 +45,54 @@
 
    // console.log(myNum)
    //guessing game//
-   const answer = Math.floor(Math.random()*10 +1)
-   let guesses = 0
-   document.getElementById("submitButton").onclick = function () {
-      let guess= document.getElementById("guessfield").value
-      guesses +=1
-      if (guess == answer) {
-         alert("is the answer ")
-      }
-      else if(guess < answer) {
-         alert("too small")
-   }
-   else if(guess > answer) {
-      alert("too big")
-   }
+
+//    const answer = Math.floor(Math.random()*10 +1)
+//    let guesses = 0
+//    document.getElementById("submitButton").onclick = function () {
+//       let guess= document.getElementById("guessfield").value
+//       guesses +=1
+//       if (guess == answer) {
+//          alert("is the answer ")
+//       }
+//       else if(guess < answer) {
+//          alert("too small")
+//    }
+//    else if(guess > answer) {
+//       alert("too big")
+//    }
+// }
+
+// let fruits = ["apple", "orange", "mangoes","banana"]
+//  fruits.push("lemons")
+//  fruits.shift()
+//  let length = fruits.length
+//  console.log(length)
+//  console.log(fruits)
+//  let prices = [20,45,23,67,47,89]
+
+//  for (let i = 0; i < prices.length; i++) {
+//    console.log(prices[i])
+//  }
+//  for(let price of prices) {
+//    prices = prices.sort().reverse()
+//    console.log(price)
+
+//  }
+var marks = []; // Initialize an empty array to store marks
+var sum = 0;
+
+// Prompt the user to enter their marks
+var numberOfMarks = parseInt(window.prompt("How many marks do you want to enter?"));
+
+// Loop to input marks
+for (var i = 0; i < numberOfMarks; i++) {
+   var mark = parseInt(window.prompt("Enter mark " + (i + 1)));
+   marks.push(mark); // Add the entered mark to the marks array
 }
+
+// Calculate the sum of marks
+for (var j = 0; j < marks.length; j++) {
+   sum += marks[j];
+}
+
+console.log("Sum of marks:", sum);
