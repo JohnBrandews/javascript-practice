@@ -74,7 +74,7 @@
 //    console.log(prices[i])
 //  }
 //  for(let price of prices) {
-//    prices = prices.sort().reverse()
+
 //    console.log(price)
 
 //  }
@@ -136,19 +136,31 @@
 // function displayDOM (output) {
 //    document.getElementById("myLabel").innerHTML = output
 // }
-let students = ["john", "james", "mary"];
 
-students.forEach(capitalize);
-students.forEach(print);
+// let students = ["john", "james", "mary"];
 
-function capitalize(element, index, array) {
-   array[index] = element[0].toUpperCase() + element.substring(1);
-}
+// students.forEach(capitalize);
+// students.forEach(print);
 
-function print(x) {
-   console.log(x);
-}
+// function capitalize(element, index, array) {
+//    array[index] = element[0].toUpperCase() + element.substring(1);
+// }
+
+// function print(x) {
+//    console.log(x);
+// }
 //substring function extracts the specified index of an element and prints it
-let lil = "john Brandews"
-let sub = lil.substring(2,7)
-console.log(sub)
+
+// let lil = "john Brandews"
+// let sub = lil.substring(2,7)
+// console.log(sub)
+// map function 
+let numbers = [1,2,3,4,5,6,7,8]
+let squares = numbers.map(square)
+squares.forEach(print)
+function  square (element) {
+   return Math.pow(element , 2)
+}
+function print(element) {
+   console.log(element)
+}
