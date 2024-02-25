@@ -157,37 +157,56 @@
 // console.log(sub)
 // map function 
 
-let numbers = [1,2,3,4,5,6,7,8]
-let squares = numbers.map(square)
-squares.forEach(print)
-function  square (element) {
-   return Math.pow(element , 2)
-}
-function print(element) {
-   console.log(element)
-}
+// let numbers = [1,2,3,4,5,6,7,8]
+// let squares = numbers.map(square)
+// squares.forEach(print)
+// function  square (element) {
+//    return Math.pow(element , 2)
+// }
+// function print(element) {
+//    console.log(element)
+// }
+
+// var marks = []
+// sum = 0
+// var enter =parseInt(window.prompt("enter  the number of marks you wish to add..."))
+// for(var i = 0; i <enter; i++) {
+// var mark = parseInt(window.prompt("Enter the your marks" + (i+1)))
+// marks.push(mark)
+// }
+// for(var j = 0; j<marks.length; j++) {
+//    sum+=marks[j]
+// }
+// console.log(sum)
+// // filter function create a new array and pass the test provided by the function
+
+// let ages = [12, 13, 14, 15, 16, 17, 18, 19, 20]
+// let age = ages.filter(elder)
+// age.forEach(print)
+// function elder(element){
+//    return element>=18
+// }
+// function print(element){
+//    console.log(element)
+// }
+
+// let marks = [50,30,70,80,60,100]
+// marks = marks.sort(descending)
+// marks.forEach(print)
+// function descending(x, y){
+//    return y-x
+// }
+// function print(element){
+//    console.log(element)
+// }
 
 var marks = []
-sum = 0
-var enter =parseInt(window.prompt("enter  the number of marks you wish to add..."))
-for(var i = 0; i <enter; i++) {
-var mark = parseInt(window.prompt("Enter the your marks" + (i+1)))
-marks.push(mark)
+var enter = window.prompt("enterthe number of marks your wish to enter")
+for (var i = 0; i <enter; i++){
+   var mark = window.prompt("enter your mark" + (i+1))
+  mark = Number(mark)
+   marks.push(mark)
 }
-for(var j = 0; j<marks.length; j++) {
-   sum+=marks[j]
-}
-console.log(sum)
-// filter function checks for condition and creates anew array
-
-let ages = [12, 13, 14, 15, 16, 17, 18, 19, 20]
-let age = ages.filter(elder)
-age.forEach(print)
-function elder(element){
-   return element>=18
-}
-function print(element){
-   console.log(element)
-}
+console.log(marks)
 
 
