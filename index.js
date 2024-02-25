@@ -78,21 +78,22 @@
 //    console.log(price)
 
 //  }
+
 // var marks = []; // Initialize an empty array to store marks
 // var sum = 0;
 
-// Prompt the user to enter their marks
+// // Prompt the user to enter their marks
 // var numberOfMarks =parseInt (window.prompt("How many marks do you want to enter?"));
 
-// Loop to input marks
+// // Loop to input marks
 // for (var i = 0; i < numberOfMarks; i++) {
-   // var mark = parseInt(window.prompt("Enter mark " + (i + 1)));
-   // marks.push(mark); // Add the entered mark to the marks array
+//    var mark = parseInt(window.prompt("Enter mark " + (i + 1)));
+//    marks.push(mark); // Add the entered mark to the marks array
 // }
 
-// Calculate the sum of marks
+// // Calculate the sum of marks
 // for (var j = 0; j < marks.length; j++) {
-   // sum += marks[j];
+//    sum += marks[j];
 // }
 
 // console.log("Sum of marks:", sum);
@@ -155,6 +156,7 @@
 // let sub = lil.substring(2,7)
 // console.log(sub)
 // map function 
+
 let numbers = [1,2,3,4,5,6,7,8]
 let squares = numbers.map(square)
 squares.forEach(print)
@@ -164,3 +166,28 @@ function  square (element) {
 function print(element) {
    console.log(element)
 }
+
+var marks = []
+sum = 0
+var enter =parseInt(window.prompt("enter  the number of marks you wish to add..."))
+for(var i = 0; i <enter; i++) {
+var mark = parseInt(window.prompt("Enter the your marks" + (i+1)))
+marks.push(mark)
+}
+for(var j = 0; j<marks.length; j++) {
+   sum+=marks[j]
+}
+console.log(sum)
+// filter function checks for condition and creates anew array
+
+let ages = [12, 13, 14, 15, 16, 17, 18, 19, 20]
+let age = ages.filter(elder)
+age.forEach(print)
+function elder(element){
+   return element>=18
+}
+function print(element){
+   console.log(element)
+}
+
+
