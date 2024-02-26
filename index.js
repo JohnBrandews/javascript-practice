@@ -221,17 +221,42 @@
 
 
 
-const greetings = function (){
-   console.log("hello");
-}
-greetings
-let count = 0;
-document.getElementById("decreaseButton").onclick = function () {
-   count-=1
-   document.getElementById("myLabel").innerHTML = count
-}
+// const greetings = function (){
+//    console.log("hello");
+// }
+// greetings
+// let count = 0;
+// document.getElementById("decreaseButton").onclick = function () {
+//    count-=1
+//    document.getElementById("myLabel").innerHTML = count
+// }
 
-document.getElementById("increaseButton").onclick = function () {
-   count+=1
-   document.getElementById("myLabel").innerHTML = count
+// document.getElementById("increaseButton").onclick = function () {
+//    count+=1
+//    document.getElementById("myLabel").innerHTML = count
+// // }
+// const greetings = function(user) {
+//    console.log("hello" + user)
+// }
+// greetings(  "jbl")
+// //arrow function
+// const greetings =  username => console.log("hello" + username)
+// greetings("jbl")
+// let marks = [50,30,70,80,60,100]
+// marks.sort((x,y) => y-x)
+// marks.forEach((element) => console.log(element));
+//shuffling cards 
+let cards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J","Q", "K"]
+shuffle(cards)
+console.log(cards)
+function shuffle(array) {
+   let currentIndex =  array.length
+   while (currentIndex !=0) {
+      let randomIndex = Math.floor(Math.random() * currentIndex)
+      currentIndex-=1
+      let temp = array[currentIndex]
+      array[currentIndex] = array[randomIndex]
+      array[randomIndex] = temp
+}
+return array
 }
