@@ -200,13 +200,38 @@
 //    console.log(element)
 // }
 
-var marks = []
-var enter = window.prompt("enterthe number of marks your wish to enter")
-for (var i = 0; i <enter; i++){
-   var mark = window.prompt("enter your mark" + (i+1))
-  mark = Number(mark)
-   marks.push(mark)
+// var marks = []
+// var enter = window.prompt("enterthe number of marks your wish to enter")
+// for (var i = 0; i <enter; i++){
+//    var mark = window.prompt("enter your mark" + (i+1))
+//   mark = Number(mark)
+//    marks.push(mark)
+// }
+// console.log(marks)
+
+//  var marks = [1,2,3,5 ,6,7,8]
+//  let squares = marks.map(square)
+//  square.forEach(print)
+//  function square(element) {
+//    return Math.pow(element, 2)
+//  }
+//  function print(element){
+//    console.log(element)
+//  }
+
+
+
+const greetings = function (){
+   console.log("hello");
 }
-console.log(marks)
+greetings
+let count = 0;
+document.getElementById("decreaseButton").onclick = function () {
+   count-=1
+   document.getElementById("myLabel").innerHTML = count
+}
 
-
+document.getElementById("increaseButton").onclick = function () {
+   count+=1
+   document.getElementById("myLabel").innerHTML = count
+}
