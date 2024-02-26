@@ -26,3 +26,15 @@ button{
     margin-top: 20px;
     margin-left: 20px;
 }
+label{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+button{
+   
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    margin-left: 350px;
+}
