@@ -245,18 +245,82 @@
 // let marks = [50,30,70,80,60,100]
 // marks.sort((x,y) => y-x)
 // marks.forEach((element) => console.log(element));
-//shuffling cards 
-let cards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J","Q", "K"]
-shuffle(cards)
-console.log(cards)
-function shuffle(array) {
-   let currentIndex =  array.length
-   while (currentIndex !=0) {
-      let randomIndex = Math.floor(Math.random() * currentIndex)
-      currentIndex-=1
-      let temp = array[currentIndex]
-      array[currentIndex] = array[randomIndex]
-      array[randomIndex] = temp
+// //shuffling cards 
+// let cards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J","Q", "K"]
+// shuffle(cards)
+// console.log(cards)
+// function shuffle(array) {
+//    let currentIndex =  array.length
+//    while (currentIndex !=0) {
+//       let randomIndex = Math.floor(Math.random() * currentIndex)
+//       currentIndex-=1
+//       let temp = array[currentIndex]
+//       array[currentIndex] = array[randomIndex]
+//       array[randomIndex] = temp
+// }
+// return array
+// }
+// //nested functions
+// let username = "jbl"
+// let userInbox = "0"
+// login()
+// function login() {
+//    displayusername()
+//    displayuserInbox()
+// }
+//  function displayusername () {
+//    console.log("welcome " + username)
+//  }
+//  function displayuserInbox () {
+//    console.log("you have " + userInbox + " "  + "new messages")
+//  }
+ //OBJECTS IN JAVA
+
+//   const  car = {
+//  model : "rangerover",
+//  color : "black",
+//  year : 2025,
+//   //this keyword is just a reference to a particular object
+  
+//   drive : function () {
+//    console.log(`iam driving ${this.model}   which is ${this.color} in color in the year ${this.year}`);
+//   },
+//   brake : function(){
+//    console.log(`iam brake  ${this.model}  which is ${this.color} in color in the year ${this.year}`);
+//   }
+//   }
+//   car.drive()
+//   car.brake()
+ //CLASSES IMN JAVA
+
+//  class Player{
+//    score = 0;
+//    pause () {
+//       console.log("you paused the game");
+//    }
+//    exit () {
+//       console.log("you exited the game");
+//    }
+//  }
+//  const Player1 = new Player()//created an object
+//  Player1.score += 1
+//  console.log(Player1.score)
+//  Player1.pause()
+//  Player1.exit()
+  
+//CONSTRUCTORS
+class Student{
+   constructor(name,age,gpa){
+      this.name = name;
+      this.age = age;
+      this.gpa = gpa;
+   }
+   study() {
+      console.log(` ${this.name} is studying`)
+   }
 }
-return array
-}
+   const student1 = new Student("jbl",19,4.5)
+   console.log(student1.name)
+   console.log(student1.age)
+   console.log(student1.gpa)
+   student1.study()
