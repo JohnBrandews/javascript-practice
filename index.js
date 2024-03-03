@@ -309,18 +309,88 @@
 //  Player1.exit()
   
 //CONSTRUCTORS
-class Student{
-   constructor(name,age,gpa){
-      this.name = name;
-      this.age = age;
-      this.gpa = gpa;
-   }
-   study() {
-      console.log(` ${this.name} is studying`)
+
+// class Student{
+//    constructor(name,age,gpa){
+//       this.name = name;
+//       this.age = age;
+//       this.gpa = gpa;
+//    }
+//    study() {
+//       console.log(` ${this.name} is studying`)
+//    }
+// }
+//    const student1 = new Student("jbl",19,4.5)
+//    console.log(student1.name)
+//    console.log(student1.age)
+//    console.log(student1.gpa)
+//    student1.study()
+//INHERITANCE//
+class Animal{
+   alive = true
+    
+   eat(){
+      console.log(`this ${this.name} is eating`)
+    }
+    sleep(){
+      console.log(`this ${this.name} is sleeping`)
+    }
+}
+class Rabbit extends Animal{
+    name = "rabbit"
+    
+    run(){
+      console.log(`this ${this.name} is running`)
+    }
+}
+
+class Fish extends Animal {
+   name = "fish"
+   swim(){
+     console.log(`this ${this.name} is swimming`)
    }
 }
-   const student1 = new Student("jbl",19,4.5)
-   console.log(student1.name)
-   console.log(student1.age)
-   console.log(student1.gpa)
-   student1.study()
+
+class Hawk extends Animal {
+   name = "hawk"
+   fly(){
+     console.log(`this ${this.name} is flying`)
+   }
+}
+
+const rabbit = new Rabbit();
+const fish = new Fish();
+const hawk = new Hawk();
+console.log(rabbit.alive)
+rabbit.sleep()
+rabbit.eat()
+rabbit.run()
+console.log(fish.alive)
+fish.sleep()
+fish.eat()
+fish.swim()
+console.log(hawk.alive)
+hawk.sleep()
+hawk.eat()
+hawk.fly()
+ 
+class Ronaldo{
+   name = "player"
+   religion(){
+   console.log(`this ${this.name} is a christian`)    
+   }
+skills(){
+   console.log(`this ${this.name} is very skillful`)
+
+}
+}
+class Mbape extends Ronaldo{
+ pace(){
+   console.log(`this ${this.name} has great speed`)
+ }
+}
+const mbape = new Mbape()
+console.log(mbape.name)
+mbape.pace()
+mbape.religion()
+mbape.skills()
