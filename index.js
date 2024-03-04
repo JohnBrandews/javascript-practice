@@ -325,72 +325,146 @@
 //    console.log(student1.age)
 //    console.log(student1.gpa)
 //    student1.study()
-//INHERITANCE//
-class Animal{
-   alive = true
+// //INHERITANCE//
+// class Animal{
+//    alive = true
     
-   eat(){
-      console.log(`this ${this.name} is eating`)
-    }
-    sleep(){
-      console.log(`this ${this.name} is sleeping`)
-    }
-}
-class Rabbit extends Animal{
-    name = "rabbit"
+//    eat(){
+//       console.log(`this ${this.name} is eating`)
+//     }
+//     sleep(){
+//       console.log(`this ${this.name} is sleeping`)
+//     }
+// }
+// class Rabbit extends Animal{
+//     name = "rabbit"
     
-    run(){
-      console.log(`this ${this.name} is running`)
-    }
-}
+//     run(){
+//       console.log(`this ${this.name} is running`)
+//     }
+// }
 
-class Fish extends Animal {
-   name = "fish"
-   swim(){
-     console.log(`this ${this.name} is swimming`)
-   }
-}
+// class Fish extends Animal {
+//    name = "fish"
+//    swim(){
+//      console.log(`this ${this.name} is swimming`)
+//    }
+// }
 
-class Hawk extends Animal {
-   name = "hawk"
-   fly(){
-     console.log(`this ${this.name} is flying`)
-   }
-}
+// class Hawk extends Animal {
+//    name = "hawk"
+//    fly(){
+//      console.log(`this ${this.name} is flying`)
+//    }
+// }
 
-const rabbit = new Rabbit();
-const fish = new Fish();
-const hawk = new Hawk();
-console.log(rabbit.alive)
-rabbit.sleep()
-rabbit.eat()
-rabbit.run()
-console.log(fish.alive)
-fish.sleep()
-fish.eat()
-fish.swim()
-console.log(hawk.alive)
-hawk.sleep()
-hawk.eat()
-hawk.fly()
+// const rabbit = new Rabbit();
+// const fish = new Fish();
+// const hawk = new Hawk();
+// console.log(rabbit.alive)
+// rabbit.sleep()
+// rabbit.eat()
+// rabbit.run()
+// console.log(fish.alive)
+// fish.sleep()
+// fish.eat()
+// fish.swim()
+// console.log(hawk.alive)
+// hawk.sleep()
+// hawk.eat()
+// hawk.fly()
  
-class Ronaldo{
-   name = "player"
-   religion(){
-   console.log(`this ${this.name} is a christian`)    
-   }
-skills(){
-   console.log(`this ${this.name} is very skillful`)
+// class Ronaldo{
+//    name = "player"
+//    religion(){
+//    console.log(`this ${this.name} is a christian`)    
+//    }
+// skills(){
+//    console.log(`this ${this.name} is very skillful`)
 
+// }
+// }
+// class Mbape extends Ronaldo{
+//  pace(){
+//    console.log(`this ${this.name} has great speed`)
+//  }
+// }
+// const mbape = new Mbape()
+// console.log(mbape.name)
+// mbape.pace()
+// mbape.religion()
+// mbape.skills()
+//GETTERS AND SETTERS
+
+// class Car{
+//    constructor(power){
+//       this._power = power
+//       this._gas = 50
+//    }
+//    get power(){
+//       return `${this._power}hp`
+//    }
+//    get gas(){
+//       return `${this._gas}L`
+//    }
+//    set gas(value){
+//       this._gas = value
+//    }
+
+// }
+// let car = new Car(500)
+// car.gas = 52
+// console.log(car.power)
+// console.log(car.gas)
+
+// class Car{
+//    constructor(model,year,color){
+//       this.model = model
+//       this.year = year
+//       this.color = color
+//    }
+//    drive(){
+//       console.log(`you drive ${this.model}`)
+//    }
+// }
+
+// const car1 = new Car("range",2020,"red")
+// const car2 = new Car("vanguard",2021,"black")
+// const car3 = new Car("lexus",2024,"blue")
+// const cars = [car1, car2, car3]
+// // console.log(cars[0].model)
+// cars[0].drive()
+// cars[1].drive()
+// // cars[2].drive()
+// Race(cars)
+//  function Race(cars){
+//    for(const gid of cars){
+//       gid.drive()
+//    }
+
+//  }
+
+// //ANANYMOUS OBJECTS
+//  class Card{
+//    constructor(value, name){
+//       this.value = value;
+//       this.name = name;
+//    }
+//  }
+//  let cards = [new Card("A","hearts"),new Card("A","spades"),new Card("A","diamonds")];
+//  console.log(cards[0].value + cards[0].name);
+//  cards.forEach(card => console.log(`${card.value} ${card.name}`));
+//EXCEPTION AND ERROR HANDLING
+try{
+   let x = window.prompt("enter a number")
+   x= Number(x);
+   if (isNaN(x)) throw "that wasn't a number!!"
+   if(x== "") throw "that was empty!!"
+   console.log(`${x} is a number`)
 }
+catch(error){
+   console.log(error)
 }
-class Mbape extends Ronaldo{
- pace(){
-   console.log(`this ${this.name} has great speed`)
- }
+finally{
+   console.log("its over");
 }
-const mbape = new Mbape()
-console.log(mbape.name)
-mbape.pace()
-mbape.religion()
-mbape.skills()
