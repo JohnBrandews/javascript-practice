@@ -471,33 +471,43 @@
 
 //SETTIMEOUT AND CLEAROUT FUNCTION
 
-let timer1 = setTimeout(FirstMessage,3000)
-let timer2 = setTimeout(SecondMessage,5000)
-let timer3 = setTimeout(ThirdMessage,7000)
-function FirstMessage(){
-   alert("get this at only $500")
-}
-function SecondMessage(){
-   alert("its not a scum!")
-}
-function ThirdMessage(){
-   alert("do it!")
-}
-document.getElementById("myButton").onclick = function(){
-   clearTimeout(timer1);
-   clearTimeout(timer2);
-   clearTimeout(timer3);
-   alert("oops you have been scammed!!")
-}
+// let timer1 = setTimeout(FirstMessage,3000)
+// let timer2 = setTimeout(SecondMessage,5000)
+// let timer3 = setTimeout(ThirdMessage,7000)
+// function FirstMessage(){
+//    alert("get this at only $500")
+// }
+// function SecondMessage(){
+//    alert("its not a scum!")
+// }
+// function ThirdMessage(){
+//    alert("do it!")
+// }
+// document.getElementById("myButton").onclick = function(){
+//    clearTimeout(timer1);
+//    clearTimeout(timer2);
+//    clearTimeout(timer3);
+//    alert("oops you have been scammed!!")
+// }
  //SETINTERVAL
- let count = 0
- let max = window.prompt("enter the max number you wish to count")
- max = Number(max)
- const myTimer = setInterval(countUp,1000)
- function countUp() {
-   count+=1;
-   console.log(count)
-   if (count >= max) {
-      clearInterval(myTimer)
-   }
- }
+
+//  let count = 0
+//  let max = window.prompt("enter the max number you wish to count")
+//  max = Number(max)
+//  const myTimer = setInterval(countUp,1000)
+//  function countUp() {
+//    count+=1;
+//    console.log(count)
+//    if (count >= max) {
+//       clearInterval(myTimer)
+//    }
+//  }
+ let date = new Date( )
+// let year = date.getFullYear();
+// let dayofweek = date.getDay()
+// date = date.setFullYear(2024)
+//  date = date.toLocaleDateString()
+
+ document.getElementById("myLabel").innerHTML = date
+ 
+
