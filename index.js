@@ -454,17 +454,50 @@
 //  let cards = [new Card("A","hearts"),new Card("A","spades"),new Card("A","diamonds")];
 //  console.log(cards[0].value + cards[0].name);
 //  cards.forEach(card => console.log(`${card.value} ${card.name}`));
-//EXCEPTION AND ERROR HANDLING
-try{
-   let x = window.prompt("enter a number")
-   x= Number(x);
-   if (isNaN(x)) throw "that wasn't a number!!"
-   if(x== "") throw "that was empty!!"
-   console.log(`${x} is a number`)
+// //EXCEPTION AND ERROR HANDLING
+// try{
+//    let x = window.prompt("enter a number")
+//    x= Number(x);
+//    if (isNaN(x)) throw "that wasn't a number!!"
+//    if(x== "") throw "that was empty!!"
+//    console.log(`${x} is a number`)
+// }
+// catch(error){
+//    console.log(error)
+// }
+// finally{
+//    console.log("its over");
+// }
+
+//SETTIMEOUT AND CLEAROUT FUNCTION
+
+let timer1 = setTimeout(FirstMessage,3000)
+let timer2 = setTimeout(SecondMessage,5000)
+let timer3 = setTimeout(ThirdMessage,7000)
+function FirstMessage(){
+   alert("get this at only $500")
 }
-catch(error){
-   console.log(error)
+function SecondMessage(){
+   alert("its not a scum!")
 }
-finally{
-   console.log("its over");
+function ThirdMessage(){
+   alert("do it!")
 }
+document.getElementById("myButton").onclick = function(){
+   clearTimeout(timer1);
+   clearTimeout(timer2);
+   clearTimeout(timer3);
+   alert("oops you have been scammed!!")
+}
+ //SETINTERVAL
+ let count = 0
+ let max = window.prompt("enter the max number you wish to count")
+ max = Number(max)
+ const myTimer = setInterval(countUp,1000)
+ function countUp() {
+   count+=1;
+   console.log(count)
+   if (count >= max) {
+      clearInterval(myTimer)
+   }
+ }
