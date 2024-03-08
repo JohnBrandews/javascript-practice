@@ -508,6 +508,30 @@
 // date = date.setFullYear(2024)
 //  date = date.toLocaleDateString()
 
- document.getElementById("myLabel").innerHTML = date
+//  document.getElementById("myLabel").innerHTML = date
  
+//CONSOLE TIME FUNCTION
 
+// console.time("responsive time")
+// alert("click the button")
+// console.timeEnd("responsive time")
+
+//PROMISES IN JAVASCRIPT
+// //this is the producing part
+// const promise = new Promise((resolve, reject) => {
+// let fileLoaded = false
+// if (fileLoaded) {
+//    resolve("fileLoaded")
+// }
+// else{
+//    reject("file not loaded")
+// }
+// });
+//consuming part
+// promise.then(value => console.log(value)) 
+//throwing exceptions it's an optional part
+// .catch(err => console.log(err)) 
+const promise = new Promise(resolve => {
+   setTimeout(resolve, 5000)
+});
+promise.then(v=> console.log("thanks for waiting"))
