@@ -17,6 +17,7 @@ setInterval(update ,1000)
         minutes = formatZero(minutes)
         seconds = formatZero(seconds)
         return `${hours} : ${minutes}:${seconds} ${amOrPm}`
+        
     }
     function formatZero(time) {
         time = time.toString();
