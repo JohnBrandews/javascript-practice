@@ -531,7 +531,32 @@
 // promise.then(value => console.log(value)) 
 //throwing exceptions it's an optional part
 // .catch(err => console.log(err)) 
-const promise = new Promise(resolve => {
-   setTimeout(resolve, 5000)
-});
-promise.then(v=> console.log("thanks for waiting"))
+// const promise = new Promise(resolve => {
+   // setTimeout(resolve, 5000)
+// });
+// promise.then(v=> console.log("thanks for waiting"))
+
+//  async function loadFile(){
+//    let fileLoaded = true
+//    if(fileLoaded){
+//       return "file loaded"
+//    }
+//    else{
+//       throw "File not loaded"
+//    }
+//  }
+//  loadFile().then(value =>  console.log(value))
+//          .catch(error  => console.error(error))
+// //WE EMPLOY IMPORT TO GET THE CODE FROM THE MATH.JS FILE WHILE WE GIVE THE LINK TO OUR JS IN HTML A MODULE
+// import { PI,getCircumference,getArea } from "./math.js"
+// console.log(PI)
+// let circumference = getCircumference(10)
+// console.log(circumference)
+// let area = getArea(10)
+// console.log(area)
+//DOM MANIPULATION 
+// console.log(document.title)
+// document.title = "hello world!"
+// document.location= "http://WWW.google.com"
+// document.body.style.backgroundColor = "pink"
+// document.getElementById("label").innerHTML = "hello world!"
