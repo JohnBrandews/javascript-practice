@@ -531,6 +531,7 @@
 // promise.then(value => console.log(value)) 
 //throwing exceptions it's an optional part
 // .catch(err => console.log(err)) 
+
 // const promise = new Promise(resolve => {
    // setTimeout(resolve, 5000)
 // });
@@ -560,3 +561,110 @@
 // document.location= "http://WWW.google.com"
 // document.body.style.backgroundColor = "pink"
 // document.getElementById("label").innerHTML = "hello world!"
+// //WAYS TO SELECT ELEMENTS
+// let fruits = document.getElementsByName("fruits");
+// fruits.forEach(fruit => {
+//    if (fruit.checked){
+//       console.log(fruit.value)
+//    }
+// })
+// let vegetables = document.getElementsByTagName("li");
+// let desserts = document.getElementsByClassName("desserts")
+// // desserts[2].style.backgroundColor = "red"
+// let element = document.querySelector("#mytitle"); //passing in id
+// mytitle.style.color = "green"
+// document.querySelector(".desserts"); //passing in class
+// desserts[1].style.color = "green"
+// let lits = document.querySelectorAll("li"); //passing all list elements
+// lits.forEach(lit =>{
+//    lit.style.color = "green"
+// // });
+// const  nametag = document.createElement("h1");
+// nametag.innerHTML = window.prompt("enter your name");
+// document.body.append(nametag);
+
+// const mylist = document.querySelector("#fruits");
+// const listitem = document.createElement("li");
+// listitem.textContent = "berry"
+// mylist.append(listitem);
+//CHANGING CSS PROPERTIES
+
+// const css = document.getElementById("myheader");
+// css.style.backgroundColor = "blue";
+// css.style.color = "pink";
+// css.style.fontFamily = "arial";
+// css.style.fontSize = "20px";
+// css.style.fontWeight = "bold";
+// css.style.textAlign = "center";
+
+// function dosomething(){
+//    alert("you did something");
+// }
+// function youclicked(){
+//    alert("you clicked");
+// }
+// // const element = document.getElementById("mybtn");
+// // element.onclick = youclicked; 
+// document.getElementById("mybtn").onclick = function(){
+//    youclicked();
+// }
+// //loads an element
+// const element = document.body;
+// element.onload = dosomething; 
+// //signals a change
+// const tix = document.getElementById("mytext");
+// tix.onchange = youclicked; 
+// //activate an event when mouse is hover
+// const dive = document.getElementById("mydiv");
+// dive.onmouseover = youclicked;
+
+//EVENTlISTENERS
+
+// const innerDiv = document.getElementById("innerDiv");
+// innerDiv.addEventListener("mouseover", changedcolor)
+// function changedcolor(){
+//    innerDiv.style.backgroundColor = "red";
+// }
+
+// javascript hiding html elements
+const myButton = document.querySelector("#myButton");
+const myImage = document.querySelector("#myImage");
+myButton.addEventListener("click", () => {
+   if (myImage.style.visibility == "hidden") {
+      myImage.style.visibility= "visible";
+   }
+   else{
+      myImage.style.visibility = "hidden";
+   }
+});
+//javascript keypresses detectors
+
+// const onotherDiv = document.getElementById("onotherDiv");
+// window.addEventListener("keydown",move)
+// let x = 0
+// let y = 0
+
+// function move(event) {
+//   switch(event.key){
+//    case "ArrowDown":
+//       y+=5;
+//       onotherDiv.style.top =y + "px"
+//       break;
+      
+//    case "ArrowUp":
+//       y-=5;
+//       onotherDiv.style.top =y + "px"
+//       break;
+      
+//    case "ArrowRight":
+//       x+=5;
+//       onotherDiv.style.left =x + "px"
+//       break;
+   
+//       case "ArrowLeft":
+//          x-=5;
+//          onotherDiv.style.left =x + "px"
+//          break;
+//   }
+  
+// }
